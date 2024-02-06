@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+#profile{letter-spacing: 0.15em; line-height: 2; position: relative;}
+#profile:after{content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; background: #fff; 
+animation: fadeInDown 3s ease-in-out .5s forwards; -webkit-animation: fadeInDown 3s ease-in-out .5s forwards;}
+
+#profile .txt{margin: 0 0 10px;}
+#profile .tit{font-family: verdanab; margin: 0 0 10px;}
+#profile table{max-width: 860px; width: 100%; margin: 0 0 50px;}
+/* #profile table{max-width: 786px; margin: 0 0 50px;} */
+#profile table:last-of-type{margin: 0;}
+#profile td{padding: 10px 0; vertical-align: top;}
+#profile td:nth-of-type(1){width: 80px;}
+
+
+/*=============================== MEDIA ===============================*/
+@media only screen and (max-width: 767px){
+#profile:after{display: none;}
+#profile table,
+#profile tbody,
+#profile tr,
+#profile td{display: block; width: 100%;}
+#profile td:nth-of-type(1){background: #f2f2f2; width: 100%; padding: 6px 10px; font-weight: bold;}
+#profile td:nth-of-type(2){padding: 8px 0 20px;}
+}
